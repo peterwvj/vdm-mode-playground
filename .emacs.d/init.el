@@ -13,6 +13,9 @@
   (setq use-package-always-demand t)
   (setq use-package-always-pin "melpa"))
 
+(setq custom-file (expand-file-name "custom.el" user-emacs-directory))
+(load custom-file nil t nil nil)
+
 (use-package vdm-comint)
 
 (use-package flycheck-vdm)
@@ -21,15 +24,14 @@
   :config
   (setq flycheck-vdm-tool-jar-path (expand-file-name "~/vdmj.jar"))
   (vdm-mode-setup))
-(custom-set-variables
- ;; custom-set-variables was added by Custom.
- ;; If you edit it by hand, you could mess it up, so be careful.
- ;; Your init file should contain only one such instance.
- ;; If there is more than one, they won't work right.
- '(package-selected-packages (quote (vdm-snippets flycheck-vdm vdm-comint use-package))))
-(custom-set-faces
- ;; custom-set-faces was added by Custom.
- ;; If you edit it by hand, you could mess it up, so be careful.
- ;; Your init file should contain only one such instance.
- ;; If there is more than one, they won't work right.
- )
+
+(use-package company
+  :config
+  ;; Tell dabbrev not to downcase candidates. See
+  ;; https://emacs.stackexchange.com/questions/10837/how-to-make-company-mode-be-case-sensitive-on-plain-text
+  (setq company-dabbrev-downcase nil)
+  
+  (add-hook 'after-init-hook 'global-company-mode)
+  (global-set-key (kbd "M-C-/") 'company-complete)
+
+  (setq company-dabbrev-other-buffers t))
