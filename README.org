@@ -1,0 +1,38 @@
+#+STARTUP: showall
+
+#+TITLE: vdm-mode Playground
+
+Run [[https://github.com/peterwvj/vdm-mode][vdm-mode]] in an isolated environment. The tools contained in this
+repository does this by
+
+- Downloading VDMJ and
+- setting up an Emacs instance that has all the necessary Emacs
+  packages installed and configured.
+
+* Requirements
+
+Emacs version 25 or newer and Java are required. The latter is a [[https://github.com/nickbattle/vdmj][VDMJ]]
+dependency.
+
+* Installation
+
+Clone this repository:
+
+#+BEGIN_SRC bash
+git clone https://github.com/peterwvj/vdm-mode-playground
+#+END_SRC
+
+Go to the directory of the Git repository
+
+#+BEGIN_SRC bash
+cd vdm-mode-playground
+#+END_SRC
+
+Execute the ~run.sh~ script:
+
+#+BEGIN_SRC bash
+./run.sh
+#+END_SRC
+
+That's it. Now you can start editing VDM files according to the
+description found [[https://github.com/peterwvj/vdm-mode#usage][here]].
