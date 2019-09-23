@@ -1,8 +1,5 @@
 #!/bin/bash
 
-# Terminate script after first line that fails
-set -e
-
 # VDMJ URL
 vdmj_url=https://github.com/nickbattle/vdmj/releases/download/4.3.0-1/vdmj-4.3.0-P-190919.jar
 
