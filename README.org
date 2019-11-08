@@ -11,7 +11,7 @@ repository does this by
 
 * Requirements
 
-Emacs version 25 or newer and Java are required. The latter is a [[https://github.com/nickbattle/vdmj][VDMJ]]
+Emacs version 25 and a recent version of Java are required. The latter is a [[https://github.com/nickbattle/vdmj][VDMJ]]
 dependency.
 
 * Installation
