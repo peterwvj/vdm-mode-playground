@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # VDMJ URL
-vdmj_url=https://github.com/nickbattle/vdmj/releases/download/4.3.0-1/vdmj-4.3.0-P-190919.jar
+vdmj_url=https://github.com/nickbattle/vdmj/releases/download/4.3.0-1/vdmj-4.3.0-200107.jar
 
 # Check if Emacs is installed
 if ! [ -x "$(command -v emacs)" ]; then
