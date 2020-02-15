@@ -9,10 +9,13 @@ repository does this by
 - setting up an Emacs instance that has all the necessary Emacs
   packages installed and configured.
 
-* Requirements
+* Prerequisites
 
-Emacs version 25 and a recent version of Java are required. The latter is a [[https://github.com/nickbattle/vdmj][VDMJ]]
-dependency.
+To set up the playground you need
+
+- Emacs version 25 or later
+- a recent version of Java (VDMJ dependency)
+- bash (for executing the installation script)
 
 * Installation
 
